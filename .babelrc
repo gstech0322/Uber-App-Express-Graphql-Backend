@@ -1,0 +1,26 @@
+{
+    "presets": [
+        "env",
+        "stage-3",
+        [
+            "env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ]
+    ],
+    "ignore": [
+        "**/socket-development"
+    ],	
+    "plugins": [
+        [
+            "transform-runtime",
+            {
+                "polyfill": false,
+                "regenerator": true
+            }
+        ]
+    ]
+}

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: rgb(48,10,36);
+    font-family: "Courier New", Courier, monospace;
+}
+
+form {
+    max-width: 30%;
+    background: #cecece;
+    padding: 10px 10px 0px 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid #484848;
+}
+
+.responseSection {
+    width: 70%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+#responseData {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#responseData li {
+    padding: 5px 5px 5px 15px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    word-break: break-all;
+}
+
+#responseData li.response {
+    padding: 5px 5px 5px 15px;
+    color: darkgreen;
+    position: relative;
+}
+
+#responseData li::before {
+    content: ' $ ';
+    position: absolute;
+    color: #fefefe;
+    left: 0;
+    top: 5px;
+    bottom: 0;
+    line-height: 23px;
+    margin-left: 5px;
+}
+
+.eventName {
+    font-weight: bold;
+    color: #fefefe;
+}
+
+#responseData li.request {
+    color: #4f5dec;
+}

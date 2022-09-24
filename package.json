@@ -1,0 +1,70 @@
+{
+  "name": "wooberly_api",
+  "version": "1.8.1",
+  "private": true,
+  "description": "Wooberly API application",
+  "scripts": {
+    "build": "babel ./src --out-dir ./build --copy-files",
+    "start": "./node_modules/nodemon/bin/nodemon.js --exec babel-node ./src/server.js --host 0.0.0.0",
+    "test": "./node_modules/nodemon/bin/nodemon.js ./build/server.js --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "RadicalStart InfoLab Pvt Ltd",
+  "dependencies": {
+    "apn": "^2.2.0",
+    "apollo-boost": "^0.1.16",
+    "apollo-server-express": "^2.1.0",
+    "async-sema": "^3.1.0",
+    "bcrypt": "^3.0.6",
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cookie-parser": "^1.4.3",
+    "cron": "^1.7.2",
+    "dotenv": "^8.1.0",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "express-jwt": "^5.3.1",
+    "fcm-node": "^1.5.1",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.9.2",
+    "ip": "^1.1.5",
+    "jsonwebtoken": "^8.3.0",
+    "money": "^0.2.0",
+    "multer": "^1.4.2",
+    "mysql2": "^1.6.1",
+    "node-fetch": "^2.2.0",
+    "path": "^0.12.7",
+    "pretty-error": "^2.1.1",
+    "sequelize": "^4.38.1",
+    "sharp": "^0.25.1",
+    "socket.io": "^2.3.0",
+    "stripe": "8.18.0",
+    "sync-each": "^1.0.1",
+    "twilio": "^3.29.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.11",
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^4.1.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  }
+}
